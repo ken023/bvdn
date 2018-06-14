@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Learn Home</title>
+</head>
+<body>
+欢迎光临 学习之家
+<p></p>
+{#实例一#}
+{#<p>#}
+{#    {{ template_string }}#}
+{#</p>#}
+
+{#实例二: for 循环和 传递list 内容显示#}
+{#如循环，条件判断是用 {%  %}（标签）#}
+{#<p>#}
+{#    {% for instance in template_list %}#}
+{#    <p>{{ instance }}</p>#}
+{#    {% endfor %}#}
+{#</p>#}
+
+{# 实例三: 显示字典中内容：#}
+{#站点：{{ template_dict.site }} 内容：{{ template_dict.content }}#}
+{#<p>#}
+{#    {% for key, value in template_dict.items %}#}
+{#    {{ key }}:{{ value }}#}
+{#    {% endfor %}#}
+{#</p>#}
+
+{#实例四，在模板进行 条件判断和 for 循环的详细操作：#}
+{#{% for num in template_list %}#}
+{#{{ num }} {% if not forloop.last %},{% endif %} 第{{ forloop.counter}}次 <li></li>#}
+{#{% endfor %}#}
+
+
+</body>
+</html>
